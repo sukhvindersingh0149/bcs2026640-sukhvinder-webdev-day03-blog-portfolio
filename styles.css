@@ -1,0 +1,323 @@
+/* =====================================================
+   Day 3 - Blog and Portfolio (dark theme)
+   Colours Day 2 jaise hi hain, taaki saare projects same dikhein.
+   ===================================================== */
+
+/* 1. Colour variables */
+:root {
+  --bg: #12151c;
+  --surface: #1b2030;
+  --border: #2c3348;
+  --text: #e8eaf0;
+  --muted: #a3a9bd;
+  --accent: #8fa6ff;
+}
+
+/* 2. Page defaults */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.7;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: var(--accent);
+}
+
+a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+h1, h2, h3 {
+  line-height: 1.25;
+}
+
+/* 3. Header and navigation (har page par same) */
+.site-header {
+  border-bottom: 1px solid var(--border);
+}
+
+.header-inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 16px 24px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.site-title {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.nav-list {
+  display: flex;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-list a {
+  display: block;
+  padding: 6px 14px;
+  border-radius: 6px;
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.nav-list a:hover {
+  color: var(--text);
+  background: var(--surface);
+}
+
+.nav-list a[aria-current="page"] {
+  color: var(--accent);
+  background: var(--surface);
+}
+
+/* 4. Main layout */
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 40px 24px 24px;
+}
+
+.section {
+  margin-bottom: 48px;
+}
+
+.section > h2 {
+  margin: 0 0 20px;
+  font-size: 1.6rem;
+}
+
+/* 5. Hero (home page ka top) */
+.hero {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.hero h1 {
+  margin: 0 0 16px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 3rem;
+  letter-spacing: -0.02em;
+}
+
+.hero p {
+  margin: 0 0 16px;
+  color: var(--muted);
+  font-size: 1.1rem;
+}
+
+.hero figure {
+  margin: 0;
+}
+
+.hero figcaption {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background: var(--accent);
+  color: #12151c;
+  font-weight: bold;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+/* 6. Cards (projects aur blog entries) */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card-body {
+  padding: 20px 24px 24px;
+}
+
+.card h3 {
+  margin: 0 0 8px;
+  font-size: 1.2rem;
+}
+
+.card p {
+  margin: 0 0 12px;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 12px;
+  padding: 0;
+  list-style: none;
+}
+
+.tag-list li {
+  padding: 2px 12px;
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  color: var(--accent);
+  font-size: 0.85rem;
+}
+
+.entry-date {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+/* 7. Blog aur About page */
+.page-heading {
+  margin: 0 0 12px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2.4rem;
+}
+
+.lead {
+  margin: 0 0 32px;
+  color: var(--muted);
+  font-size: 1.1rem;
+}
+
+.with-aside {
+  display: grid;
+  grid-template-columns: 1fr 260px;
+  gap: 32px;
+  align-items: start;
+}
+
+.entry {
+  margin-bottom: 24px;
+  padding: 24px 28px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
+  border-radius: 8px;
+}
+
+.entry h2 {
+  margin: 4px 0 12px;
+  font-size: 1.4rem;
+}
+
+.entry p {
+  margin: 0 0 12px;
+}
+
+.entry figure {
+  margin: 16px 0 0;
+}
+
+.entry figcaption {
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.sidebar {
+  padding: 20px 24px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.sidebar h2 {
+  margin: 0 0 12px;
+  font-size: 1.1rem;
+}
+
+.sidebar ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.sidebar dl {
+  margin: 0;
+}
+
+.sidebar dt {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.sidebar dd {
+  margin: 0 0 10px;
+}
+
+.plain-list {
+  padding-left: 22px;
+}
+
+.plain-list li {
+  margin-bottom: 6px;
+}
+
+/* 8. Footer */
+.site-footer {
+  width: calc(100% - 48px);
+  max-width: 912px;
+  margin: 24px auto 0;
+  padding: 24px 0 48px;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+}
+
+.site-footer p {
+  margin: 0 0 4px;
+}
+
+/* 9. Mobile layout */
+@media (max-width: 720px) {
+  .hero,
+  .card-grid,
+  .with-aside {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 2.3rem;
+  }
+
+  .page-heading {
+    font-size: 2rem;
+  }
+
+  main {
+    padding-top: 28px;
+  }
+}

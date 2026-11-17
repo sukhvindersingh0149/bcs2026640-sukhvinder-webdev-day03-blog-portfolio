@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 220" role="img">
+  <rect width="640" height="220" rx="12" fill="#1b2030"/>
+  <line x1="80" y1="110" x2="560" y2="110" stroke="#8fa6ff" stroke-width="4"/>
+  <g fill="#12151c" stroke="#8fa6ff" stroke-width="4">
+    <circle cx="80" cy="110" r="16"/>
+    <circle cx="240" cy="110" r="16"/>
+    <circle cx="400" cy="110" r="16"/>
+    <circle cx="560" cy="110" r="16"/>
+  </g>
+  <g font-family="system-ui, sans-serif" font-size="18" fill="#e8eaf0" text-anchor="middle">
+    <text x="80" y="165">add</text>
+    <text x="240" y="165">commit</text>
+    <text x="400" y="165">push</text>
+    <text x="560" y="165">GitHub</text>
+  </g>
+</svg>

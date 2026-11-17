@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Blog and portfolio of Sukhvinder Singh, a B.Tech CSE student learning web development." />
+    <title>Home | Sukhvinder Singh</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- header + nav: teeno pages me same hai. Navigation ek list (ul) me hai -->
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="site-title" href="index.html">Sukhvinder Singh</a>
+        <nav aria-label="Main navigation">
+          <ul class="nav-list">
+            <li><a href="index.html" aria-current="page">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section hero" id="intro">
+        <div>
+          <h1>Hi, I am Sukhvinder.</h1>
+          <p>
+            I am a first-year B.Tech CSE student at Invertis University. This
+            site is where I show what I build while learning web development,
+            and write about what I learn along the way.
+          </p>
+          <a class="button" href="blog.html">Read my blog</a>
+        </div>
+        <!-- figure + figcaption: image ke saath uska caption -->
+        <figure>
+          <img
+            src="images/hero-code.svg"
+            alt="A code editor window showing header, main and section HTML tags"
+            width="640"
+            height="400"
+          />
+          <figcaption>Semantic HTML tags, the building blocks of every page I make.</figcaption>
+        </figure>
+      </section>
+
+      <section class="section" id="projects">
+        <h2>Selected projects</h2>
+        <div class="card-grid">
+          <article class="card">
+            <img
+              src="images/project-intro.svg"
+              alt="Sketch of a dark page with stacked content cards"
+              width="480"
+              height="300"
+            />
+            <div class="card-body">
+              <h3>Day 2: Personal introduction page</h3>
+              <p>My first page about myself, with headings, sections and a dark theme.</p>
+              <ul class="tag-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Semantic tags</li>
+              </ul>
+              <!-- External link: naye tab me khulta hai (target="_blank").
+                   rel="noopener noreferrer" security ke liye zaroori hai -->
+              <a
+                href="https://github.com/sukhvindersingh0149/bcs2026640-sukhvinder-webdev-day02-personal-intro-page"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View on GitHub (opens in a new tab)</a
+              >
+            </div>
+          </article>
+
+          <article class="card">
+            <img
+              src="images/project-blog.svg"
+              alt="Sketch of a blog layout with a navigation bar, two posts and a sidebar"
+              width="480"
+              height="300"
+            />
+            <div class="card-body">
+              <h3>Day 3: Blog and portfolio</h3>
+              <p>This website. Three linked pages with lists, images and a mobile layout.</p>
+              <ul class="tag-list">
+                <li>Links</li>
+                <li>Images</li>
+                <li>Lists</li>
+              </ul>
+              <a href="about.html">Read about the project</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="recent-posts">
+        <h2>Recent journal entries</h2>
+        <div class="card-grid">
+          <article class="card">
+            <div class="card-body">
+              <time class="entry-date" datetime="2026-11-17">17 November 2026</time>
+              <h3>Links and images finally make sense</h3>
+              <p>Today I connected three pages together and added my own images.</p>
+              <a href="blog.html#links-images">Read the entry</a>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-body">
+              <time class="entry-date" datetime="2026-11-10">10 November 2026</time>
+              <h3>My first push to GitHub</h3>
+              <p>What I learned about add, commit and push.</p>
+              <a href="blog.html#first-push">Read the entry</a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Sukhvinder Singh, Roll No. BCS2026640</p>
+      <p>
+        Email:
+        <a href="mailto:sukhvindersingh0149@gmail.com">sukhvindersingh0149@gmail.com</a>
+      </p>
+      <p>
+        GitHub:
+        <a href="https://github.com/sukhvindersingh0149" target="_blank" rel="noopener noreferrer">sukhvindersingh0149</a>
+      </p>
+    </footer>
+  </body>
+</html>

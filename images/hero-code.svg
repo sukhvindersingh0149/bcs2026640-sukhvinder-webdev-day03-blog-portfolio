@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img">
+  <rect width="640" height="400" rx="16" fill="#1b2030"/>
+  <rect width="640" height="44" rx="16" fill="#252c42"/>
+  <rect y="28" width="640" height="16" fill="#252c42"/>
+  <circle cx="28" cy="22" r="7" fill="#ff7b72"/>
+  <circle cx="52" cy="22" r="7" fill="#e3b341"/>
+  <circle cx="76" cy="22" r="7" fill="#56d364"/>
+  <g font-family="Consolas, Menlo, monospace" font-size="20">
+    <text x="36" y="96" fill="#8fa6ff">&lt;header&gt;</text>
+    <text x="68" y="132" fill="#e8eaf0">&lt;h1&gt;Sukhvinder&lt;/h1&gt;</text>
+    <text x="36" y="168" fill="#8fa6ff">&lt;/header&gt;</text>
+    <text x="36" y="216" fill="#8fa6ff">&lt;main&gt;</text>
+    <text x="68" y="252" fill="#e8eaf0">&lt;section&gt;</text>
+    <text x="100" y="288" fill="#a3a9bd">learning every day</text>
+    <text x="68" y="324" fill="#e8eaf0">&lt;/section&gt;</text>
+    <text x="36" y="360" fill="#8fa6ff">&lt;/main&gt;</text>
+  </g>
+</svg>
