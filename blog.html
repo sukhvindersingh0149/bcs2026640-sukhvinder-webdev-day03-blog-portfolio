@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Learning journal of Sukhvinder Singh about web development." />
+    <title>Blog | Sukhvinder Singh</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="site-title" href="index.html">Sukhvinder Singh</a>
+        <nav aria-label="Main navigation">
+          <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blog.html" aria-current="page">Blog</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <h1 class="page-heading">Learning journal</h1>
+      <p class="lead">Short notes about what I learn in web development, newest first.</p>
+
+      <div class="with-aside">
+        <div>
+          <!-- Har journal entry ek article hai, kyunki wo apne aap me complete hai -->
+          <article class="entry" id="links-images">
+            <time class="entry-date" datetime="2026-11-17">17 November 2026</time>
+            <h2>Links and images finally make sense</h2>
+            <p>
+              Today I built a site with three pages and connected them using
+              the <code>a</code> tag. The most important thing I learned is the
+              difference between a <strong>relative path</strong> like
+              <code>images/hero-code.svg</code> and a full web address.
+            </p>
+            <p>
+              I also learned that every image needs an <em>alt</em> text, so
+              people using screen readers know what the image shows.
+            </p>
+            <figure>
+              <img
+                src="images/hero-code.svg"
+                alt="A code editor window showing header, main and section HTML tags"
+                width="640"
+                height="400"
+              />
+              <figcaption>The semantic tags I used to structure this site.</figcaption>
+            </figure>
+          </article>
+
+          <article class="entry" id="first-push">
+            <time class="entry-date" datetime="2026-11-10">10 November 2026</time>
+            <h2>My first push to GitHub</h2>
+            <p>
+              Git saves my work in small steps. First I run <code>git add</code>
+              to choose files, then <code>git commit</code> to save a snapshot,
+              and finally <code>git push</code> to upload it to GitHub.
+            </p>
+            <figure>
+              <img
+                src="images/git-flow.svg"
+                alt="Diagram of four steps in a line: add, commit, push and GitHub"
+                width="640"
+                height="220"
+              />
+              <figcaption>The path my code takes from my laptop to GitHub.</figcaption>
+            </figure>
+          </article>
+
+          <article class="entry" id="first-page">
+            <time class="entry-date" datetime="2026-11-03">3 November 2026</time>
+            <h2>Why I chose web development</h2>
+            <p>
+              I like that I can write a few lines, refresh the browser and see
+              the result straight away. That quick feedback keeps me curious.
+              My goal is to finish one small project every week.
+            </p>
+          </article>
+        </div>
+
+        <aside class="sidebar">
+          <h2>Blog topics</h2>
+          <!-- Topics ki list -->
+          <ul>
+            <li>HTML basics</li>
+            <li>CSS styling</li>
+            <li>Git and GitHub</li>
+            <li>Learning tips</li>
+          </ul>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <p>Sukhvinder Singh, Roll No. BCS2026640</p>
+      <p>
+        Email:
+        <a href="mailto:sukhvindersingh0149@gmail.com">sukhvindersingh0149@gmail.com</a>
+      </p>
+      <p>
+        GitHub:
+        <a href="https://github.com/sukhvindersingh0149" target="_blank" rel="noopener noreferrer">sukhvindersingh0149</a>
+      </p>
+    </footer>
+  </body>
+</html>
